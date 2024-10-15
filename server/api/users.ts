@@ -1,0 +1,178 @@
+export default defineEventHandler(async (event) => {
+  const columns = [
+    {
+      key: 'id',
+      label: 'ID',
+      sortable: true,
+    },
+    {
+      key: 'name',
+      label: 'User name',
+      sortable: true,
+    },
+    {
+      key: 'title',
+      label: 'Job position',
+      sortable: true,
+    },
+    {
+      key: 'email',
+      label: 'Email',
+      sortable: true,
+    },
+    {
+      key: 'role',
+      label: 'Role',
+      sortable: true,
+    },
+  ];
+
+  const rows = [
+    {
+      id: 1,
+      name: 'Lindsay Walton',
+      title: 'Front-end Developer',
+      email: 'lindsay.walton@example.com',
+      role: 'Member',
+    },
+    {
+      id: 2,
+      name: 'Courtney Henry',
+      title: 'Designer',
+      email: 'courtney.henry@example.com',
+      role: 'Admin',
+    },
+    {
+      id: 3,
+      name: 'Tom Cook',
+      title: 'Director of Product',
+      email: 'tom.cook@example.com',
+      role: 'Member',
+    },
+    {
+      id: 4,
+      name: 'Whitney Francis',
+      title: 'Copywriter',
+      email: 'whitney.francis@example.com',
+      role: 'Admin',
+    },
+    {
+      id: 5,
+      name: 'Leonard Krasner',
+      title: 'Senior Designer',
+      email: 'leonard.krasner@example.com',
+      role: 'Owner',
+    },
+    {
+      id: 6,
+      name: 'Floyd Miles',
+      title: 'Principal Designer',
+      email: 'floyd.miles@example.com',
+      role: 'Member',
+    },
+    {
+      id: 7,
+      name: 'Emily Selman',
+      title: 'VP, User Experience',
+      email: 'emily.selman@example.com',
+      role: 'Admin',
+    },
+    {
+      id: 8,
+      name: 'Kristin Watson',
+      title: 'VP, Human Resources',
+      email: 'kristin.watson@example.com',
+      role: 'Member',
+    },
+    {
+      id: 9,
+      name: 'Emma Watson',
+      title: 'Front-end Developer',
+      email: 'emma.watson@example.com',
+      role: 'Member',
+    },
+    {
+      id: 10,
+      name: 'John Doe',
+      title: 'Designer',
+      email: 'john.doe@example.com',
+      role: 'Admin',
+    },
+    {
+      id: 11,
+      name: 'Jane Doe',
+      title: 'Director of Product',
+      email: 'jane.doe@example.com',
+      role: 'Member',
+    },
+    {
+      id: 12,
+      name: 'John Smith',
+      title: 'Copywriter',
+      email: 'john.smith@example.com',
+      role: 'Admin',
+    },
+    {
+      id: 13,
+      name: 'Jane Smith',
+      title: 'Senior Designer',
+      email: 'jane.smith@example.com',
+      role: 'Owner',
+    },
+    {
+      id: 14,
+      name: 'Michael Brown',
+      title: 'Software Engineer',
+      email: 'michael.brown@example.com',
+      role: 'Member',
+    },
+    {
+      id: 15,
+      name: 'Sarah Johnson',
+      title: 'Product Manager',
+      email: 'sarah.johnson@example.com',
+      role: 'Admin',
+    },
+    {
+      id: 16,
+      name: 'David Wilson',
+      title: 'UX Designer',
+      email: 'david.wilson@example.com',
+      role: 'Member',
+    },
+    {
+      id: 17,
+      name: 'Laura Martinez',
+      title: 'Data Scientist',
+      email: 'laura.martinez@example.com',
+      role: 'Admin',
+    },
+    {
+      id: 18,
+      name: 'James Anderson',
+      title: 'Backend Developer',
+      email: 'james.anderson@example.com',
+      role: 'Member',
+    },
+    {
+      id: 19,
+      name: 'Patricia Thomas',
+      title: 'Marketing Specialist',
+      email: 'patricia.thomas@example.com',
+      role: 'Admin',
+    },
+    {
+      id: 20,
+      name: 'Robert Jackson',
+      title: 'DevOps Engineer',
+      email: 'robert.jackson@example.com',
+      role: 'Member',
+    },
+  ];
+
+  return {
+    columns,
+    rows,
+    totalCount: rows.length,
+  };
+});
