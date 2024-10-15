@@ -15,22 +15,15 @@ const links = [
       to: '/',
     },
     {
-      label: 'Horizontal Navigation',
-      icon: 'i-heroicons-chart-bar',
-    },
-    {
-      label: 'Command Palette',
-      icon: 'i-heroicons-command-line',
+      label: 'Users',
+      icon: 'i-heroicons-user-group',
+      to: '/users',
     },
   ],
   [
     {
-      label: 'Examples',
-      icon: 'i-heroicons-light-bulb',
-    },
-    {
-      label: 'Help',
-      icon: 'i-heroicons-question-mark-circle',
+      label: 'About',
+      icon: 'i-heroicons-information-circle',
       to: '/about'
     },
   ],
