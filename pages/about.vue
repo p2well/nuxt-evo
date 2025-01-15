@@ -1,14 +1,16 @@
 <template>
-  <UContainer>
-    <UCard class="mt-10">
-      <template #header>
-        <div class="flex justify-between">
-          <h1>About</h1>
-        </div>
-      </template>
-      <UAccordion :items="items" />
-    </UCard>
-  </UContainer>
+  <main id="main-content">
+    <UContainer>
+      <UCard class="mt-10" role="region" aria-labelledby="page-title">
+        <template #header>
+          <div class="flex justify-between">
+            <h1 id="page-title">About</h1>
+          </div>
+        </template>
+        <UAccordion :items="items" />
+      </UCard>
+    </UContainer>
+  </main>
 </template>
 
 <script setup lang="ts">

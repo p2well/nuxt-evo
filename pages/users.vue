@@ -1,57 +1,63 @@
 <template>
-  <UContainer>
-    <UCard class="mt-10">
-      <template #header>
-        <div class="flex justify-between">
-          <h1>People</h1>
-          <UBadge color="primary" variant="solid">Total: {{ totalCount }}</UBadge>
-        </div>
-      </template>
-      <div class="flex justify-between border-b items-center w-full px-4 py-3  border-gray-200 dark:border-gray-700">
-        <div class="flex items-center gap-1.5">
-          <span class="text-sm leading-5">Rows per page:</span>
-
-          <USelect
-            v-model="pageCount"
-            :options="[5, 10, 20]"
-            class="me-2 w-20"
-            size="xs"
-          />
-        </div>
-      </div>
-      <UTable
-        :loading="loading"
-        :loading-state="{
-          icon: 'i-heroicons-arrow-path-20-solid',
-          label: 'Loading...',
-        }"
-        :progress="{ color: 'primary', animation: 'carousel' }"
-        class="w-full"
-        :columns="columns"
-        :rows="pageRows"
-      />
-      <template #footer>
-        <div class="flex flex-wrap justify-between items-center">
-          <div>
-            <span class="text-sm leading-5">
-              Showing
-              <span class="font-medium">{{ pageFrom }}</span>
-              to
-              <span class="font-medium">{{ pageTo }}</span>
-              of
-              <span class="font-medium">{{ totalCount }}</span>
-              results
-            </span>
+  <main id="main-content">
+    <UContainer>
+      <UCard class="mt-10" role="region" aria-labelledby="page-title">
+        <template #header>
+          <div class="flex justify-between">
+            <h1 id="page-title">People</h1>
+            <UBadge color="primary" variant="solid"
+              >Total: {{ totalCount }}</UBadge
+            >
           </div>
-          <UPagination
-            v-model="page"
-            :page-count="pageCount"
-            :total="totalCount"
-          />
+        </template>
+        <div
+          class="flex justify-between border-b items-center w-full px-4 py-3 border-gray-200 dark:border-gray-700"
+        >
+          <div class="flex items-center gap-1.5">
+            <span class="text-sm leading-5">Rows per page:</span>
+
+            <USelect
+              v-model="pageCount"
+              :options="[5, 10, 20]"
+              class="me-2 w-20"
+              size="xs"
+            />
+          </div>
         </div>
-      </template>
-    </UCard>
-  </UContainer>
+        <UTable
+          :loading="loading"
+          :loading-state="{
+            icon: 'i-heroicons-arrow-path-20-solid',
+            label: 'Loading...',
+          }"
+          :progress="{ color: 'primary', animation: 'carousel' }"
+          class="w-full"
+          :columns="columns"
+          :rows="pageRows"
+        />
+        <template #footer>
+          <div class="flex flex-wrap justify-between items-center">
+            <div>
+              <span class="text-sm leading-5">
+                Showing
+                <span class="font-medium">{{ pageFrom }}</span>
+                to
+                <span class="font-medium">{{ pageTo }}</span>
+                of
+                <span class="font-medium">{{ totalCount }}</span>
+                results
+              </span>
+            </div>
+            <UPagination
+              v-model="page"
+              :page-count="pageCount"
+              :total="totalCount"
+            />
+          </div>
+        </template>
+      </UCard>
+    </UContainer>
+  </main>
 </template>
 
 <script setup lang="ts">

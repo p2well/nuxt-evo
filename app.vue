@@ -1,4 +1,5 @@
 <template>
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
   <UHorizontalNavigation
     :links="links"
     class="border-b border-gray-200 dark:border-gray-800"
@@ -29,3 +30,19 @@ const links = [
   ],
 ];
 </script>
+
+<style scoped>
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+</style>
