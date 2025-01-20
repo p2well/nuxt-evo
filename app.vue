@@ -9,14 +9,7 @@
         :links="links"
         class="border-b border-gray-200 dark:border-gray-800"
       />
-      <div class="min-w-32 pl-4">
-        <ColorScheme
-          ><USelect
-            v-model="$colorMode.preference"
-            :options="['system', 'light', 'dark']"
-            aria-label="Color Scheme Selector"
-        /></ColorScheme>
-      </div>
+      <ColorModePicker />
     </header>
     <NuxtPage />
   </UContainer>
