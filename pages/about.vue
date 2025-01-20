@@ -7,7 +7,10 @@
             <h1 id="page-title">About</h1>
           </div>
         </template>
-        <UAccordion :items="items" />
+        <UAccordion
+          variant="solid"
+          size="sm"
+          :items="items" />
       </UCard>
     </UContainer>
   </main>
