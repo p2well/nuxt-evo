@@ -4,7 +4,7 @@
       <UCard class="mt-10" role="region" aria-labelledby="page-title">
         <template #header>
           <div class="flex justify-between">
-            <h1 id="page-title">People</h1>
+            <h1 id="page-title">Users</h1>
             <UBadge color="primary" variant="solid"
               >Total: {{ totalCount }}</UBadge
             >
