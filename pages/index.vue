@@ -5,12 +5,6 @@
         <template #header>
           <div class="flex justify-between">
             <h1 id="page-title">Home</h1>
-            <ColorScheme
-              ><USelect
-                v-model="$colorMode.preference"
-                :options="['system', 'light', 'dark']"
-                aria-label="Color Scheme Selector"
-            /></ColorScheme>
           </div>
         </template>
       </UCard>
