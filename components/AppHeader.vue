@@ -1,5 +1,5 @@
 <template>
-  <header class="flex flex-row items-center">
+  <header class="flex flex-row flex-wrap sm:flex-nowrap items-center">
     <a href="#main-content" class="skip-to-content">Skip to content</a>
     <div class="font-sans font-medium text-lg text-nowrap pr-4">
       Nuxt Evolution
