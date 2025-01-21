@@ -24,11 +24,11 @@
 function iconName(theme: string): string {
   switch (theme) {
     case 'system':
-      return 'material-symbols:computer-outline';
+      return 'i-material-symbols-computer-outline';
     case 'dark':
-      return 'material-symbols:nightlight-outline';
+      return 'i-material-symbols-nightlight-outline';
     default:
-      return 'material-symbols:sunny-outline';
+      return 'i-material-symbols-sunny-outline';
   }
 }
 </script>
