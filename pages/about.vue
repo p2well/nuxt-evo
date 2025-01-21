@@ -1,19 +1,14 @@
 <template>
-  <main id="main-content">
-    <UContainer>
-      <UCard class="mt-10" role="region" aria-labelledby="page-title">
-        <template #header>
-          <div class="flex justify-between">
-            <h1 id="page-title">About</h1>
-          </div>
-        </template>
-        <UAccordion
-          variant="solid"
-          size="sm"
-          :items="items" />
-      </UCard>
-    </UContainer>
-  </main>
+  <UContainer>
+    <UCard class="mt-10" role="region" aria-labelledby="page-title">
+      <template #header>
+        <div class="flex justify-between">
+          <h1 id="page-title">About</h1>
+        </div>
+      </template>
+      <UAccordion variant="solid" size="sm" :items="items" />
+    </UCard>
+  </UContainer>
 </template>
 
 <script setup lang="ts">
