@@ -1,13 +1,17 @@
 <template>
   <UContainer>
-    <UCard class="mt-10">
+    <UCard class="mt-10" role="region" aria-labelledby="page-title">
       <template #header>
         <div class="flex justify-between">
-          <h1>People</h1>
-          <UBadge color="primary" variant="solid">Total: {{ totalCount }}</UBadge>
+          <h1 id="page-title">Users</h1>
+          <UBadge color="primary" variant="solid"
+            >Total: {{ totalCount }}</UBadge
+          >
         </div>
       </template>
-      <div class="flex justify-between border-b items-center w-full px-4 py-3  border-gray-200 dark:border-gray-700">
+      <div
+        class="flex justify-between border-b items-center w-full px-4 py-3 border-gray-200 dark:border-gray-700"
+      >
         <div class="flex items-center gap-1.5">
           <span class="text-sm leading-5">Rows per page:</span>
 
